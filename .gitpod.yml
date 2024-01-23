@@ -1,0 +1,6 @@
+tasks:
+  - init: >
+      wget -q https://dot.net/v1/dotnet-install.sh &&
+      chmod +x dotnet-install.sh &&
+      ./dotnet-install.sh -c Current --install-dir "$HOME/.dotnet" &&
+      echo 'export PATH=$PATH:$HOME/.dotnet' >> ~/.bashrc
